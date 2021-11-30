@@ -25,15 +25,19 @@ public class DatatypesDemo2 {
 		colors[1]="green";
 		colors[2]="yellow";
 		
+		System.out.println(colors.length);
+		
 		System.out.println(colors);
 		System.out.println(colors[2]);
-		System.out.println(colors[4]);
+//		System.out.println(colors[4]);
 		
 		numbers=new int[7];
 		System.out.println(numbers);
 		System.out.println(numbers[0]);
 		
+		int[] values= {45,98,38,98,79,25,54}; 
 		
+		System.out.println(values[0]);
 	}
 
 }
