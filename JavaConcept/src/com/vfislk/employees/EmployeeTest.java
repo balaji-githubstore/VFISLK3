@@ -4,27 +4,25 @@ public class EmployeeTest {
 
 	public static void main(String[] args) {
 		
-		Employee emp1=new Employee();
-//		System.out.println(emp1);
-		emp1.empId=101;
+		Employee.companyName="VFISLK Pvt";
+		
+		
+//		Employee e=new Employee((double)10,10);
+		
+		Employee emp1=new Employee();  //1st object //empid = 101
+		Employee emp2=new Employee(); //2nd object //empid =102
+		Employee emp3=new Employee(); //3rd object //empid=103
+		
 		emp1.empName="John";
 		emp1.empSalary=2000;
-		emp1.companyName="VFI-SLK";
 		
-		System.out.println(emp1.empId);
-		System.out.println(emp1.empName);
-		System.out.println(emp1.empSalary);
-		System.out.println(emp1.companyName);
-		System.out.println("**************************");
+		emp2.empName="Peter";
+		emp2.empSalary=8000;
 		
-		Employee emp2=new Employee();
-//		System.out.println(emp2);
-		emp2.empId=102;
-		
-		System.out.println(emp2.empId);
-		System.out.println(emp2.empName);
-		System.out.println(emp2.empSalary);
-		System.out.println(emp2.companyName);
+		emp1.printEmployeeDetail();
+		emp2.printEmployeeDetail();
+		emp3.printEmployeeDetail();
+
 		
 		
 	}
