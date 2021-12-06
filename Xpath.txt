@@ -1,0 +1,39 @@
+Absolute xpath - /html/body/form/div[1]/div[1]/div[4]/button
+
+Relative xpath:
+//tagname[@attribute='']
+//tagname[text()='']
+
+
+Contains
+//tagname[contains(@attribute,'')]
+//tagname[contains(text(),'')]
+
+//*[contains(text(),'valid phone')]
+
+
+inspect in chrome and use ctrl+f to validate xpath
+
+Grouping of xpath:-
+(//div[@class='checkbox-ui'])[2]
+
+
+
+
+
+
+
+
+Example:
+//button[@type='submit']
+//button[@class='btn btn-login btn-lg']
+
+//div[text()='Messages']
+
+//a[text()=' New User ']
+
+//a[contains(text(),'New User')]
+//input[contains(@id,'UserFirstName')]
+
+//input[@value='10 - 99']
+//label[text()='10 - 99']
