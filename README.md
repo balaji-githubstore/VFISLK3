@@ -2,4 +2,6 @@
 
 Dec 3 - Complete the Selenium assignment. 
 
-https://netbanking.hdfcbank.com/netbanking/
+https://netbanking.hdfcbank.com/netbanking/IpinResetUsingOTP.htm
+
+
