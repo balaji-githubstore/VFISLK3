@@ -45,7 +45,7 @@ public class OpenEmrTest {
 		driver.quit();
 		
 		
-		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='modalIframe']")));
+		
 	}
 }
 

@@ -4,7 +4,7 @@ public class Loop3Demo {
 
 	public static void main(String[] args) {
 		
-		int i=100;
+		int i=1;
 		
 		while(i<=10)
 		{
@@ -12,6 +12,7 @@ public class Loop3Demo {
 			System.out.println(i);
 			i++;
 			System.out.println(p);
+			break;
 		}
 		
 		System.out.println("******************************");

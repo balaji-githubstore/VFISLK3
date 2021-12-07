@@ -8,10 +8,12 @@ public class Loop2Demo {
 		
 		for(int value : values)
 		{
-			if(value<=50)
+			if(value==98)
 			{
 				System.out.println(value);
+				break;
 			}
+			
 		}
 
 		String[] colors= {"red","green","yellow","pink"};

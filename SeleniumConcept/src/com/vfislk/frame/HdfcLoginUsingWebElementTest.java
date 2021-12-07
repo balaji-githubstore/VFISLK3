@@ -19,7 +19,7 @@ public class HdfcLoginUsingWebElementTest {
 		driver.get("https://netbanking.hdfcbank.com/netbanking/");
 		
 		
-		driver.switchTo().frame(driver.findElement(By.xpath("//frame[contains(@src,'RSNBLogin.html')]")));
+		driver.switchTo().frame(driver.findElement(By.xpath("//frame[contains(@src,'RSNB')]")));
 		
 		driver.findElement(By.name("fldLoginUserId")).sendKeys("test123");
 		driver.findElement(By.linkText("CONTINUE")).click();

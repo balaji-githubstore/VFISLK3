@@ -12,6 +12,8 @@ public class LoginTest {
 
 	public static void main(String[] args) throws InterruptedException{
 		
+		System.out.println("text "+123);
+		
 		System.setProperty("webdriver.chrome.driver", "C:\\Components\\chromedriver.exe");	
 		
 		WebDriver driver=new ChromeDriver();
