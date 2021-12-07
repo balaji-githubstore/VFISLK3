@@ -21,3 +21,7 @@ driver.findElement(By.id("form_DOB")).sendKeys("2021-12-06");
 14.	Handle alert 
 15.	Close the Happy Birthday popup
 16.	 Get the added patient name and print in the console.
+
+
+Check
+https://datatables.net/extensions/select/examples/initialisation/checkbox.html
