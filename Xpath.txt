@@ -37,3 +37,6 @@ Example:
 
 //input[@value='10 - 99']
 //label[text()='10 - 99']
+
+
+number of rows - //table[@id='example']/tbody/tr
