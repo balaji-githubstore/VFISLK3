@@ -1,33 +1,61 @@
 # VFISLK3
-
-
-Day 7 - Dec 7, 2021
-Assignment (Day 7 - Dec 7, 2021)
+Assignment (Day 8 - Dec 8, 2021)
 
 Introduction 
 This assignment will help you understand the concepts learnt in the session.
 Objective 
 In this challenge, we will automate elements in web page inside frame and alert box
-Task 
-1.	Please try to configure Chrome Browser or firefox browser and navigate to https://datatables.net/extensions/select/examples/initialisation/checkbox.html
-2.	Select 50 entries per page using the drop down. Now you will get 2 pages. 
-3.	Get the list of employee name and salary in the page 1 and page 2, whose age is greater than or equal to 50 
-4.	Sum up the filtered salary and print.
-Task
-5.	Launch the web site https://phptravels.net/
-6.	Goto Flights  
-7.	Select Business 
-8.	Choose "FROM" location as "Los Angeles" (LAX) 
-9.	Choose "TO" as "Dallas" (DAL) 
-10.	Set the travel date “30-12-2021”
-11.	Adult as 4
-12.	Child as 2
-13.	Get the first flight details and print  
-LAX  DAL
-Dates ( 23-09-2021  25-09-2021 )
-Adults 4 Childs 2 Infants 0
-14.	Close the browser
+Task 1
+1.	Navigate onto https://www.oracle.com/in/database/
+2.	Click on View Account
+3.	Click on Sign in 
+4.	Get and print the title of the page 
+5.	Get and print the current url of the page 
+6.	Get and print the page header (Oracle account sign in) 
+7.	Enter username as john 
+8.	Enter password as john123
+9.	Click on sign in
+10.	Get the error message and print it in console (Invalid username and/or password.)
 
 
-Link 
-https://www.oracle.com/in/index.html
+
+
+Task 2 
+1.	Navigate onto https://www.royalcaribbean.com/
+2.	Close if any pop up. or load create an account page directly and do from step 4 
+3.	Click Sign in and Click Create an account
+4.	First Name as Dennis 
+5.	Last Name as Rich
+6.	Select Month as April 
+7.	Day as 4
+8.	Year as 1990
+9.	Country as India
+10.	Any email address and password 
+11.	Select as “What was your first car's make or model?”
+12.	Type answer 
+13.	Accept the terms and condition 
+14.	Click done 
+
+Task 3 
+1.	Navigate https://nasscom.in/
+2.	Click on Become a member
+3.	Get and log the header “Membership Form”
+4.	Get and log the header “NASSCOM Membership Is Only For Organizations And NOT For Individuals.”
+5.	Click on Institutional Members
+6.	Check Telecom Services
+7.	Check Trade & Investment
+8.	Fill Specialization as “planning and operation”
+9.	Fill name of the organization as “HARMaN”
+10.	Fill address 1 as “25 hosa road”
+11.	State - Karnataka 
+12.	City - Bengluru  
+13.	Click Calculate Membership Fee
+14.	Get the alert text and print, log to report 
+15.	Check Code of Conduct
+16.	Click preview 
+
+Task 4 
+1.	Navigate https://www.myntra.com/
+2.	Click on Login/Signup under profile 
+3.	Click on continue 
+4.	Get the error message and print Please enter a valid mobile number (10 digits)
