@@ -22,6 +22,8 @@ public class LoginTest {
 		
 		driver.get("https://opensource-demo.orangehrmlive.com/"); //no limit for page load so it will for page load happen
 		
+		String href=driver.findElement(By.partialLinkText("Forgot")).getAttribute("href");
+		System.out.println(href);
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
 		driver.findElement(By.id("btnLogin")).click();
