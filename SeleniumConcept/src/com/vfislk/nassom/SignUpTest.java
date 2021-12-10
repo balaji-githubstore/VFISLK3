@@ -30,6 +30,15 @@ public class SignUpTest {
 		Select selectBusinessFocus = new Select(driver.findElement(By.id("edit-field-business-focus-reg")));
 		selectBusinessFocus.selectByVisibleText("IT Consulting");
 
+		WebElement ele= selectBusinessFocus.getFirstSelectedOption();
+		String visibletext= ele.getText();
+		System.out.println(visibletext);
+		
+		String att=ele.getAttribute("value");
+		System.out.println(att);
+		
+		//driver.findElement(By.id("")).isSelected()
+		
 	}
 
 }

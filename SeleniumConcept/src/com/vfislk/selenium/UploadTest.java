@@ -6,8 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class NavigationTest {
-	
+public class UploadTest {
+
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Components\\chromedriver.exe");
 
@@ -15,19 +15,11 @@ public class NavigationTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
-//		driver.get("https://google.com/");
-		driver.navigate().to("https://google.com/");
+		driver.get("https://nasscom.in/nasscom-membership");
 		
-		driver.findElement(By.tagName("a")).click();
+		driver.findElement(By.id("edit-field-memorandum-article-of-asso-und-0-upload")).sendKeys("D:\\Profile.docx");
 		
-		//fill the form and submit 
-		driver.navigate().back();
-		
-		//form submitted
-		
-		driver.navigate().forward();
-		
-		driver.navigate().refresh();
-		
+
 	}
+
 }

@@ -1,13 +1,14 @@
-package com.vfislk.selenium;
+package com.vfislk.actions;
 
 import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
-public class NavigationTest {
-	
+public class Nasscom1Test {
+
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Components\\chromedriver.exe");
 
@@ -15,19 +16,14 @@ public class NavigationTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
-//		driver.get("https://google.com/");
-		driver.navigate().to("https://google.com/");
+		driver.get("https://nasscom.in/");
 		
-		driver.findElement(By.tagName("a")).click();
 		
-		//fill the form and submit 
-		driver.navigate().back();
+		Actions action=new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath("//a[text()='Membership']"))).perform();
 		
-		//form submitted
-		
-		driver.navigate().forward();
-		
-		driver.navigate().refresh();
-		
+		driver.findElement(By.xpath("//a[text()='Members Listing']")).click();
+
 	}
+
 }

@@ -27,6 +27,20 @@ public class LoginTest {
 		Select selectLang = new Select(driver.findElement(By.name("languageChoice")));
 		selectLang.selectByVisibleText("English (Indian)");
 		
+		WebElement ele= selectLang.getFirstSelectedOption();
+		String visibletext= ele.getText();
+		System.out.println(visibletext);
+		
+		String att=ele.getAttribute("value");
+		System.out.println(att);
+		
+
+//		String visibletext= selectLang.getFirstSelectedOption().getText();
+//		System.out.println(visibletext);
+//		
+//		String att=selectLang.getFirstSelectedOption().getAttribute("value");
+//		System.out.println(att);
+		
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		
 		//get the title of the dashboard page

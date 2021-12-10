@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -19,13 +20,23 @@ public class GoogleTest {
 
 		driver.get("https://www.google.com/");
 		
-		
 		Actions action=new Actions(driver);
 		
 		action.keyDown(Keys.SHIFT).sendKeys("hello")
 		.keyUp(Keys.SHIFT).pause(Duration.ofSeconds(1)).sendKeys(Keys.ARROW_DOWN)
 		.sendKeys(Keys.ARROW_DOWN).pause(Duration.ofSeconds(1))
 		.sendKeys(Keys.ENTER).build().perform();
+		
+		driver.switchTo().newWindow(WindowType.TAB); //new tab
+		
+		driver.get("https://www.magento.com/");
+		
+//		Actions action=new Actions(driver);
+//		
+//		action.keyDown(Keys.SHIFT).sendKeys("hello")
+//		.keyUp(Keys.SHIFT).pause(Duration.ofSeconds(1)).sendKeys(Keys.ARROW_DOWN)
+//		.sendKeys(Keys.ARROW_DOWN).pause(Duration.ofSeconds(1))
+//		.sendKeys(Keys.ENTER).build().perform();
 
 		
 	}
