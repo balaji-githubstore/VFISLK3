@@ -1,3 +1,4 @@
 # VFISLK3
-https://testng.org/testng-eclipse-update-site/zipped/6.10.0.201612030230/site_assembly.zip
+Eclipse latest version in zip format
+https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-12/R/eclipse-java-2021-12-R-win32-x86_64.zip
 
