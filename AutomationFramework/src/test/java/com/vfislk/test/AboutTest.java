@@ -17,13 +17,15 @@ public class AboutTest extends WebDriverWrapper {
 		Select selectLang = new Select(driver.findElement(By.name("languageChoice")));
 		selectLang.selectByVisibleText("English (Indian)");
 
-		driver.findElement(By.xpath("//button[@type='submit']")).click();	
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
 		driver.findElement(By.xpath("//div[text()='About']")).click();
+		
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@name='msc']")));	
 		String actualVersion= driver.findElement(By.tagName("h4")).getText();	
 		driver.switchTo().defaultContent();
 		
-		Assert.assertEquals(actualVersion, "Version Number: v6.0.0 (2)");
+		Assert.assertEquals(actualVersion, "Version Number: v6.0.0");
 	}
 	
 }

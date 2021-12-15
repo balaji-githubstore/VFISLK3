@@ -15,7 +15,7 @@ public class WebDriverWrapper {
 	@BeforeMethod
 	public void setUp() {
 
-		String browser = "edge";
+		String browser = "ch";
 
 		if (browser.equalsIgnoreCase("edge")) {
 			System.setProperty("webdriver.edge.driver", "src/test/resources/driver/msedgedriver.exe");
@@ -28,8 +28,9 @@ public class WebDriverWrapper {
 			driver = new ChromeDriver();
 		}
 
+		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 		driver.get("https://demo.openemr.io/b/openemr");
 	}
 
