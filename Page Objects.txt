@@ -1,0 +1,27 @@
+Class - LoginPage - page 1
+	enterUsername(String username)
+	enterPassword(String password)
+	selectLanguageByText(String text)
+	clickOnLogin()
+	getLoginPageTitle()
+	getInvalidErrorMessage()
+	getApplicationDescription()
+	clickOnAckLicCert()
+
+class - DashBoardPage
+	waitForPresenceOfAbout()
+	clickOnCalendar()
+	clickOnFlowBoard()
+	clickOnRecallBoard()
+	clickOnMessages()
+	clickOnAbout()
+	--all menu will be handled here
+	getDashboardPageTitle()
+
+
+class - AboutPage
+	getVersionNumber()
+	getAboutHeader()
+	clickOnUserManual()
+	clickOnDonateNow()
+

@@ -1,0 +1,228 @@
+https://github.com/balaji-githubstore/VFISLK3.git
+
+Architecture 
+Datatypes 
+Conditional statement
+Iterative statement
+Methods - Static & Non-static methods - create & call
+
+Class & Object 
+-----------------------------------------
+Encapsulation
+Inheritance 
+Method overriding - run time polymorphism 
+Method overloading - compile time polymorphism 
+Abstarct & Interface 
+
+
+---
+picked up jvm hook
+
+
+
+To call the static method: 
+Classname.methodname()
+
+To call non-static method 
+
+Area obj= new Area(); //allocate memory
+obj.methodName()
+
+
+
+Class - Math
+	Static methods - 
+			max()
+			min()
+			pow()
+
+Securtiy notfication unapproved file 
+
+
+
+
+
+
+
+Employee template 
+empid
+empname
+empsal
+companyName
+
+
+
+
+emp1-->L1-->(empid=101,empname="john",empsal=2000,companyName=VFISLK)
+emp2-->L2-->(empid=102,empname="peter",empsal=8000,companyName=VFISLK)
+emp3-->L3-->(empid=103,empname="mark",empsal=6000,companyName=VFISLK)
+
+
+
+
+
+
+Encapsulation
+inheritance
+Polymorphism
+Abstraction 
+
+
+
+
+
+class ChromeDriver 
+	non-static 
+		get(String url)
+		getTitle()
+		getCurrentUrl()
+class WebDriverWait 
+	non-static 
+		until
+
+class - Actions
+	non-static 
+
+		By locator= By.id("txtUsername");	
+		 WebElement element= driver.findElement(locator);
+		 element.sendKeys("Admin");
+
+ WebElement element= driver.findElement(By.id("txtUsername"));
+		 element.sendKeys("Admin");
+
+
+	WebElement element= driver.findElement(By.name("languageChoice"));
+		
+		Select selectLang=new Select(element);
+		selectLang.selectByVisibleText("English (Indian)");
+
+https://demo.openemr.io/b/openemr
+
+
+Enter username admin
+Enter password pass
+Select language - English (Indian)
+click on login
+get the title of the dashboard page
+
+
+
+1.	Navigate onto https://nasscom.in/
+2.	Click on New User 
+3.	Enter First name as john
+4.	Enter Last name as wick
+5.	Enter email address as admin@gmail.com
+6.	Enter company name as Google
+7.	Select - IT Consulting
+8.     No need to automate CAPTCHA
+9.	Click on Register 
+
+
+
+
+
+1.	Navigate onto https://demo.openemr.io/b/openemr
+2.	Update username as admin
+3.	Update password as pass
+4.	Click on the login button
+5.	Click on Messages
+6.	Click on Add New
+7.	Enter text in text area as “hello”
+8.	Select Type as Pharmacy
+9.	Click on Send message
+10.      get the text Please choose a patient
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Navigate onto https://www.medibuddy.in/
+2. Click on NOT NOW (popup)
+3. Click on For Emplpoyer
+4. Enter name as jack
+5. Enter work email id as jack@gmail.com
+6. click on get in touch
+
+
+
+
+1. Navigate onto https://www.oracle.com/in/index.html
+2. Mouse hover on Low data networking fees text
+3. Click on Sign in to Cloud
+
+
+1.	Launch the web site https://phptravels.net/
+2.	Goto Flights  
+3.	Select Business 
+4.	Choose "FROM" location as "Los Angeles" (LAX) 
+5.	Choose "TO" as "Dallas" (DAL) 
+6.	Set the travel date “30-12-2021”
+7.	Adult as 4
+8.	Child as 2
+9.	Get the first flight details and print  
+LAX  DAL
+Dates ( 23-09-2021  25-09-2021 )
+Adults 4 Childs 2 Infants 0
+10.	Close the browser
+
+LAX  DAL
+Dates ( 30-12-2021  13-12-2021 )
+
+Adults 4 Childs 2 Infants 0
+
+0 --> webelement 1
+1 --> webelement 2
+
+24
+
+		System.setProperty("webdriver.edge.driver", "src/test/resources/driver/msedgedriver.exe");
+		
+
+expected version - Version Number: v6.0.0 (2)
+
+
+
+0-->{john,john123}
+1-->{peter,peter123}
+2-->{mark,mark123}
+
+john,john123,openemr
+peter,peter123,openemr
+mark,mark123,openemr
+
+
+
+{{4,"king",20.2},{5,"peter",40.2}}
+
+
+
+"English (Indian)"
+
+"Version Number: v6.0.0"
+
+
+
+Excel index  		Object array
+
+1 0			0 0
+1 1			0 1
+1 2			0 2
+1 3			0 3
+
+2 0			1 0
+2 1			1 1
+2 2			1 2
+2 3			1 3
+
+
+//will start at 12:10 PM IST
+
+

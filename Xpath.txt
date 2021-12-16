@@ -4,6 +4,8 @@ Relative xpath:
 //tagname[@attribute='']
 //tagname[text()='']
 
+//div[normalize-space()='Low data networking fees and automated migration']
+
 
 Contains
 //tagname[contains(@attribute,'')]
@@ -18,10 +20,42 @@ Grouping of xpath:-
 (//div[@class='checkbox-ui'])[2]
 
 
+AND-OR
+//input[@type='file' and @id='edit-field-memorandum-article-of-asso-und-0-upload']
+//*[@id='email' or @id='Email']
+
+Following - preceding (above elements)
+//tagname[@attribute='']/following::tagname
+
+//label[contains(text(),'Name of Organization')]/following::input
+//label[contains(text(),'Pincode ')]/following::input
+//label[contains(text(),'Year of Establishment')]/following::select
+
+
+Parent-child 
+
+child - //table[@id='example']/tbody/tr[1]/td[2]
+parent - //img[@alt='Adobe logo']/../..
+
+Ancestor - descendant
+
+//img[@alt='Adobe logo']/ancestor::a
+//img[@alt='Adobe logo']/ancestor::a[@id='gnav_571']
+
+
+//table[@id='example']/descendant::td or //table[@id='example']//td
+
+
+Following - sibiling 
 
 
 
+svg element
+//*[@class='email-capture__close']
 
+//*[name()='svg']
+
+(//*[name()='svg'])[6]
 
 
 Example:
@@ -38,5 +72,20 @@ Example:
 //input[@value='10 - 99']
 //label[text()='10 - 99']
 
+//tagname[@attribute='']
+
+//i[@class='la la-plus']
 
 number of rows - //table[@id='example']/tbody/tr
+//*[contains(text(),'IT Products')] 
+
+
+CSS Selector: 
+#id
+.classname
+tagname[att='']
+[att='']
+
+Example: 
+select[name='languageChoice']
+button[type='submit']
