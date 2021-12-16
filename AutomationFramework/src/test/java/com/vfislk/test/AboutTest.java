@@ -6,16 +6,17 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.vfislk.base.WebDriverWrapper;
+import com.vfislk.utilities.DataUtils;
 
 public class AboutTest extends WebDriverWrapper {
 	
-	@Test
-	public void checkVersionNumberTest()
+	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider")
+	public void checkVersionNumberTest(String username, String password, String language, String expectedVersion)
 	{
-		driver.findElement(By.id("authUser")).sendKeys("admin");
-		driver.findElement(By.id("clearPass")).sendKeys("pass");
+		driver.findElement(By.id("authUser")).sendKeys(username);
+		driver.findElement(By.id("clearPass")).sendKeys(password);
 		Select selectLang = new Select(driver.findElement(By.name("languageChoice")));
-		selectLang.selectByVisibleText("English (Indian)");
+		selectLang.selectByVisibleText(language);
 
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		
@@ -25,7 +26,7 @@ public class AboutTest extends WebDriverWrapper {
 		String actualVersion= driver.findElement(By.tagName("h4")).getText();	
 		driver.switchTo().defaultContent();
 		
-		Assert.assertEquals(actualVersion, "Version Number: v6.0.0");
+		Assert.assertEquals(actualVersion, expectedVersion);
 	}
 	
 }

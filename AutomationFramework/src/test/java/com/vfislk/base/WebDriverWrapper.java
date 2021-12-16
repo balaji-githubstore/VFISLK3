@@ -1,5 +1,6 @@
 package com.vfislk.base;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -9,13 +10,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.vfislk.utilities.PropUtils;
+
 public class WebDriverWrapper {
 	protected WebDriver driver;
 
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() throws IOException {
 
-		String browser = "ch";
+		String browser = PropUtils.getValue("src/test/resources/testdata/data.properties", "browser");
 
 		if (browser.equalsIgnoreCase("edge")) {
 			System.setProperty("webdriver.edge.driver", "src/test/resources/driver/msedgedriver.exe");
@@ -31,7 +34,9 @@ public class WebDriverWrapper {
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
-		driver.get("https://demo.openemr.io/b/openemr");
+		
+		String url = PropUtils.getValue("src/test/resources/testdata/data.properties", "url");
+		driver.get(url);
 	}
 
 	@AfterMethod

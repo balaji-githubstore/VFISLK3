@@ -18,16 +18,20 @@ public class ExcelUtils {
 		int rowCount = sheet.getPhysicalNumberOfRows();
 		int cellCount = sheet.getRow(0).getPhysicalNumberOfCells();
 		DataFormatter format = new DataFormatter();
-		Object[][] main = new Object[rowCount - 1][cellCount];
+		
+		Object[][] arr = new Object[rowCount - 1][cellCount];
 
 		for (int r = 1; r < rowCount; r++) {
 			for (int c = 0; c < cellCount; c++) {
 				String cellValue = format.formatCellValue(sheet.getRow(r).getCell(c));
-				System.out.println(cellValue);
-				main[r - 1][c] = cellValue;
+				arr[r - 1][c] = cellValue;
 			}
 		}
-		return main;
+		
+		book.close();
+		return arr;
 	}
 
+	//log the result in excel
+	
 }
