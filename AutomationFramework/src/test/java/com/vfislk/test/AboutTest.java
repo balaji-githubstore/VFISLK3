@@ -10,7 +10,7 @@ import com.vfislk.utilities.DataUtils;
 
 public class AboutTest extends WebDriverWrapper {
 	
-	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider")
+	@Test(dataProviderClass = DataUtils.class,dataProvider = "commonDataProvider",groups = {"high","about"})
 	public void checkVersionNumberTest(String username, String password, String language, String expectedVersion)
 	{
 		driver.findElement(By.id("authUser")).sendKeys(username);

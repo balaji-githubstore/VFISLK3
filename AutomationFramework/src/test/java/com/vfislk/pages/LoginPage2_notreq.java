@@ -9,7 +9,7 @@ import com.vfislk.base.WebDriverKeywords;
 /**
  * This class handles all the element in the login page
  **/
-public class LoginPage extends WebDriverKeywords {
+public class LoginPage2_notreq {
 
 	private By usernameLocator = By.id("authUser");
 	private By passwordLocator = By.id("clearPass");
@@ -19,8 +19,7 @@ public class LoginPage extends WebDriverKeywords {
 
 	private WebDriver driver;
 
-	public LoginPage(WebDriver driver) {
-		super(driver);
+	public LoginPage2_notreq(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -29,7 +28,7 @@ public class LoginPage extends WebDriverKeywords {
 	 **/
 
 	public void enterUsername(String username) {
-		typeOnElement(usernameLocator, username);
+		driver.findElement(usernameLocator).sendKeys(username);
 	}
 
 	/**
@@ -37,15 +36,16 @@ public class LoginPage extends WebDriverKeywords {
 	 **/
 	
 	public void enterPassword(String password) {
-		typeOnElement(passwordLocator, password);
+		driver.findElement(passwordLocator).sendKeys(password);
 	}
 
 	public void selectLangaugeByText(String language) {
-		SelectUsingText(languageLocator,language);
+		Select selectLang = new Select(driver.findElement(languageLocator));
+		selectLang.selectByVisibleText(language);
 	}
 
 	public void clickOnLogin() {
-		clickOnElement(errorLocator);
+		driver.findElement(loginLocator).click();
 	}
 
 	public String getLoginPageTitle() {
