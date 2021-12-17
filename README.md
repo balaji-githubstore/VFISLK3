@@ -1,4 +1,7 @@
 # VFISLK3
-Eclipse latest version in zip format
-https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-12/R/eclipse-java-2021-12-R-win32-x86_64.zip
+Selenium Project - https://github.com/balaji-githubstore/SeleniumProjectVFISLK3.git
+
+Automation Framework - https://github.com/balaji-githubstore/AutomationFrameworkVFISLK3.git
+
+
 
