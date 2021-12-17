@@ -1,0 +1,133 @@
+Selenium Java Documentation - http://seleniumhq.github.io/selenium/docs/api/java/index.html
+Appium Java Client Documentation - http://www.javadoc.io/doc/io.appium/java-client/5.0.4
+Appium Server Documentation - http://appium.io/slate/en/master/?java#
+TestNG Documentation - http://testng.org/doc/documentation-main.html
+mac Virtual Machine - https://www.youtube.com/watch?v=5RQ21XG8Ts4
+
+
+Explicit wait
+http://www.seleniumeasy.com/selenium-tutorials/webdriver-wait-examples
+http://www.seleniumeasy.com/selenium-tutorials/synchronization-in-selenium-webdriver
+
+Table
+https://datatables.net/extensions/select/examples/initialisation/checkbox.html
+
+Assertion
+https://webkul.com/blog/assertion-in-selenium-webdriver/
+
+
+Xpath
+https://www.utest.com/articles/finding-xpath-of-dynamically-changing-element
+
+http://www.mythoughts.co.in/2012/05/selenium-webdriver-getsize-vs.html#.WrAGE6hubIU
+
+
+Chromeoptions
+https://sites.google.com/a/chromium.org/chromedriver/capabilities
+
+
+Window auth
+https://www.engprod2-spectrumbusiness.net
+http://Username:Password@SiteURL
+
+https://Username123:Password123@www.engprod2-spectrumbusiness.net
+or 
+autoit
+
+
+Hard and Soft Assertion
+https://blogs.perficient.com/2016/01/13/hard-and-soft-assertions-in-selenium/
+
+Javascript executor:
+https://www.softwaretestingmaterial.com/javascriptexecutor-selenium-webdriver/
+
+
+//*[contains(text(),'Forgot')]
+
+Firfox http handler
+ProfilesIni prof = new ProfilesIni()				
+FirefoxProfile ffProfile= prof.getProfile ("myProfile")
+ffProfile.setAcceptUntrustedCertificates(true) 
+ffProfile.setAssumeUntrustedCertificateIssuer(false)
+WebDriver driver = new FirefoxDriver (ffProfile)
+
+
+chrome http handler
+
+DesiredCapabilities handlSSLErr = DesiredCapabilities.chrome ()       
+handlSSLErr.setCapability (CapabilityType.ACCEPT_SSL_CERTS, true)
+WebDriver driver = new ChromeDriver (handlSSLErr);
+
+IE http hanlder
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+System.setProperty("webdriver.ie.driver","IEDriverServer.exe");
+WebDriver driver = new InternetExplorerDriver(capabilities);
+
+
+Javascript 
+
+JavascriptExecutor js = (JavascriptExecutor) driver;  
+js.executeScript(Script,Arguments);
+
+
+document.getElementById("email").value="bala"
+js.executeScript("document.getElementById('some id').value='someValue';
+
+
+js.executeScript("document.getElementById('enter your element id').click();");
+js.executeScript("arguments[0].click();", loginButton);
+
+https://www.softwaretestingmaterial.com/javascriptexecutor-selenium-webdriver/
+Appium 
+
+http://adbshell.com/
+
+Jenkins:
+https://www.quora.com/How-can-I-configure-Jenkins-to-send-an-attachment-in-email-notifications
+https://stackoverflow.com/questions/38916406/how-to-extent-report-in-jenkins
+https://wiki.jenkins.io/display/JENKINS/HTML+Publisher+Plugin
+
+https://www.seleniumeasy.com/selenium-tutorials/mouse-hover-using-javascriptexecutor
+
+code- mousehover
+ String strJavaScript = "var element = arguments[0]; var mouseEventObj = document.createEvent('MouseEvents'); mouseEventObj.initEvent( 'mouseover', true, true ); element.dispatchEvent(mouseEventObj);";
+
+
+((IJavaScriptExecutor)driver).ExecuteScript(strJavaScript, WebElement);
+
+
+javascript for xpath
+document.evaluate("//a",document.body,null,9,null).singleNodeValue
+
+
+Pom.xml
+https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html
+
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+
+
+Cucumber
+https://cucumber.io/docs/cucumber/cucumber-expressions/
+
+
+DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
+cap.setCapability("ignoreProtectedModeSettings",1);
+cap.setCapability("IntroduceInstabilityByIgnoringProtectedModeSettings",true);
+cap.setCapability("nativeEvents",true);
+cap.setCapability("browserFocus",true);
+cap.setCapability("ignoreZoomSetting", true);
+cap.setCapability("requireWindowFocus","true");
+cap.setCapability("INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS", true);
+
+CSS - javascrip
+
+document.querySelector('[role="listbox"]').scrollBy(0,20)
+
+document.querySelector("[aria-labelledby='agreements']").scrollIntoView()
+
+
+document.querySelector("[id='magento-identity-ui-btn']").getStyles().backgroundColor
+
+
+
